@@ -20,7 +20,7 @@ Example:
 <link rel="import" href="file-upload-icons.html">
 
 <dom-module id="file-upload">
-
+  <template>
   <style type="text/css">
     :host {
       display: inline-block;
@@ -105,9 +105,7 @@ Example:
     paper-progress[error] {
       --paper-progress-active-color: var(--error-color);
     }
-  </style>
-
-  <template>
+  </style>  
     <div>
       <paper-button id="button" icon="file-upload-icons:file-upload" class="blue" on-click="_fileClick" alt="{{paperButtonAlt}}" title="{{paperButtonTitle}}">
         <content></content>
